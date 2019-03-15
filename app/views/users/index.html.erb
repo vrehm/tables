@@ -1,0 +1,12 @@
+<div class="py-10 lg:py-20 px-4 border-b border-grey-light mb-4 text-indigo-darker">
+  <div class="container m-auto text-center">
+    <h1 class="text-xl lg:text-3xl">Welcome to Users Dashboard!</h1>
+    <p class="lead my-2 max-w-md m-auto leading-normal text-grey-darker text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime quaerat maiores, repellat minus fugit, non modi id.</p>
+  </div>
+</div>
+
+<div class="flex flex-wrap -mb-4">
+  <% @users.each do |user| %>
+    <%= render "shared/user_card", user: user %>
+  <% end %>
+</div>

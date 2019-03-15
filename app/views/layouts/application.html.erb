@@ -19,7 +19,7 @@
   <body class="bg-grey-lighter">
     <%= render "shared/flashes" %>
     <%= render "shared/header" %>
-    <main class="relative pin-t mt-8 pt-16">
+    <main class="relative pin-t mt-8 pt-16 min-h-screen">
       <%= content_for?(:content) ? yield(:content) : yield %>
     </main>
     <%= render "shared/footer" %>
